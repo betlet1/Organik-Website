@@ -5,7 +5,7 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
 <!--[if gt IE 8]><!-->
 <html class="no-js" lang>
- <!--<![endif]-->
+<!--<![endif]-->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -346,63 +346,217 @@
     </style>
 
     <meta name="robots" content="noindex, nofollow">
-    <script nonce="4c82b03e-bc2d-4af5-935e-815c5e5085b9">(function (w, d) { !function (j, k, l, m) { j[l] = j[l] || {}; j[l].executed = []; j.zaraz = { deferred: [], listeners: [] }; j.zaraz.q = []; j.zaraz._f = function (n) { return async function () { var o = Array.prototype.slice.call(arguments); j.zaraz.q.push({ m: n, a: o }) } }; for (const p of ["track", "set", "debug"]) j.zaraz[p] = j.zaraz._f(p); j.zaraz.init = () => { var q = k.getElementsByTagName(m)[0], r = k.createElement(m), s = k.getElementsByTagName("title")[0]; s && (j[l].t = k.getElementsByTagName("title")[0].text); j[l].x = Math.random(); j[l].w = j.screen.width; j[l].h = j.screen.height; j[l].j = j.innerHeight; j[l].e = j.innerWidth; j[l].l = j.location.href; j[l].r = k.referrer; j[l].k = j.screen.colorDepth; j[l].n = k.characterSet; j[l].o = (new Date).getTimezoneOffset(); if (j.dataLayer) for (const w of Object.entries(Object.entries(dataLayer).reduce(((x, y) => ({ ...x[1], ...y[1] })), {}))) zaraz.set(w[0], w[1], { scope: "page" }); j[l].q = []; for (; j.zaraz.q.length;) { const z = j.zaraz.q.shift(); j[l].q.push(z) } r.defer = !0; for (const A of [localStorage, sessionStorage]) Object.keys(A || {}).filter((C => C.startsWith("_zaraz_"))).forEach((B => { try { j[l]["z_" + B.slice(7)] = JSON.parse(A.getItem(B)) } catch { j[l]["z_" + B.slice(7)] = A.getItem(B) } })); r.referrerPolicy = "origin"; r.src = "/cdn-cgi/zaraz/s.js?z=" + btoa(encodeURIComponent(JSON.stringify(j[l]))); q.parentNode.insertBefore(r, q) };["complete", "interactive"].includes(k.readyState) ? zaraz.init() : j.addEventListener("DOMContentLoaded", zaraz.init) }(w, d, "zarazData", "script"); })(window, document);</script>
+    <script nonce="ea81abaa-121c-4657-a802-81525710867d">(function (w, d) { !function (j, k, l, m) { j[l] = j[l] || {}; j[l].executed = []; j.zaraz = { deferred: [], listeners: [] }; j.zaraz.q = []; j.zaraz._f = function (n) { return async function () { var o = Array.prototype.slice.call(arguments); j.zaraz.q.push({ m: n, a: o }) } }; for (const p of ["track", "set", "debug"]) j.zaraz[p] = j.zaraz._f(p); j.zaraz.init = () => { var q = k.getElementsByTagName(m)[0], r = k.createElement(m), s = k.getElementsByTagName("title")[0]; s && (j[l].t = k.getElementsByTagName("title")[0].text); j[l].x = Math.random(); j[l].w = j.screen.width; j[l].h = j.screen.height; j[l].j = j.innerHeight; j[l].e = j.innerWidth; j[l].l = j.location.href; j[l].r = k.referrer; j[l].k = j.screen.colorDepth; j[l].n = k.characterSet; j[l].o = (new Date).getTimezoneOffset(); if (j.dataLayer) for (const w of Object.entries(Object.entries(dataLayer).reduce(((x, y) => ({ ...x[1], ...y[1] })), {}))) zaraz.set(w[0], w[1], { scope: "page" }); j[l].q = []; for (; j.zaraz.q.length;) { const z = j.zaraz.q.shift(); j[l].q.push(z) } r.defer = !0; for (const A of [localStorage, sessionStorage]) Object.keys(A || {}).filter((C => C.startsWith("_zaraz_"))).forEach((B => { try { j[l]["z_" + B.slice(7)] = JSON.parse(A.getItem(B)) } catch { j[l]["z_" + B.slice(7)] = A.getItem(B) } })); r.referrerPolicy = "origin"; r.src = "/cdn-cgi/zaraz/s.js?z=" + btoa(encodeURIComponent(JSON.stringify(j[l]))); q.parentNode.insertBefore(r, q) };["complete", "interactive"].includes(k.readyState) ? zaraz.init() : j.addEventListener("DOMContentLoaded", zaraz.init) }(w, d, "zarazData", "script"); })(window, document);</script>
 </head>
-<body >
-    <div class="sufee-login d-flex align-content-center flex-wrap">
-        <div class="container">
-            <div class="login-content">
-                <div class="login-logo">
-                    <a href="index.html">
-                        <img class="align-content" src="/assets/images/logo.png" alt="Gözde Ürünler">
-                    </a>
+<body>
+    <!-- -----SOL PANEL----- -->
+    <aside id="left-panel" class="left-panel">
+        <nav class="navbar navbar-expand-sm navbar-default">
+            <div class="navbar-header">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="grafik.html"><img src="/assets/images/logo.png" alt="Logo"></a>
+            </div>
+            <div id="main-menu" class="main-menu collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <h3 class="menu-title">ÜRÜNLER</h3>
+                    <li class="menu-item-has-children dropdown">
+                        <a href="index.html" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-lemon-o"></i>Meyveler</a>
+                        <ul class="sub-menu children dropdown-menu">
+                            <li><i class="fa fa-angle-right"></i><a href="edit_avokado.html">Avokado</a></li>
+                            <li><i class="fa fa-angle-right"></i><a href="edit_avokado.html">Badem</a></li>
+                            <li><i class="fa fa-angle-right"></i><a href="edit_avokado.html">Dikenli İncir</a></li>
+                            <li><i class="fa fa-angle-right"></i><a href="edit_avokado.html">Muz</a></li>
+                            <li><i class="fa fa-angle-right"></i><a href="edit_avokado.html">Portakal</a></li>
+                            <li><i class="fa fa-angle-right"></i><a href="meyveler.html">Tümü</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-table"></i>Sebzeler</a>
+                        <ul class="sub-menu children dropdown-menu">
+                            <li><i class="fa fa-angle-right"></i><a href="edit_biber.html">Biber</a></li>
+                            <li><i class="fa fa-angle-right"></i><a href="edit_biber.html">Domates</a></li>
+                            <li><i class="fa fa-angle-right"></i><a href="edit_biber.html">Patlıcan</a></li>
+                            <li><i class="fa fa-angle-right"></i><a href="sebzeler.html">Tümü</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item-has-children active dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-coffee"></i>Kahvaltılıklar</a>
+                        <ul class="sub-menu children dropdown-menu">
+                            <li><i class="fa fa-angle-right"></i><a href="edit_peynir.html">Peynir</a></li>
+                            <li><i class="fa fa-angle-right"></i><a href="edit_peynir.html">Süt</a></li>
+                            <li><i class="fa fa-angle-right"></i><a href="edit_peynir.html">Yumurta</a></li>
+                            <li><i class="fa fa-angle-right"></i><a href="edit_peynir.html">Zeytin</a></li>
+                            <li><i class="fa fa-angle-right"></i><a href="kahvaltilik.html">Tümü</a></li>
+                        </ul>
+                    </li>
+                    <h3 class="menu-title">BİLGİLENDİRME</h3>
+                    <li class="menu-item-has-children dropdown">
+                        <a href="index.html" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-bullhorn"></i>Duyurular</a>
+                        <ul class="sub-menu children dropdown-menu">
+                            <li><i class="fa fa-angle-right"></i><a href="edit_duyuru.html">Duyuru1</a></li>
+                            <li><i class="fa fa-angle-right"></i><a href="edit_duyuru.html">Duyuru2</a></li>
+                            <li><i class="fa fa-angle-right"></i><a href="edit_duyuru.html">Duyuru3</a></li>
+                            <li><i class="fa fa-angle-right"></i><a href="edit_duyuru.html">Duyuru4</a></li>
+                            <li><i class="fa fa-angle-right"></i><a href="edit_duyuru.html">Duyuru5</a></li>
+
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="hakkimizda.html"> <i class="menu-icon fa fa-users"></i>Hakkımızda </a>
+                    </li>
+                    <li>
+                        <a href="misyonvizyon.html"> <i class="menu-icon fa fa-road"></i>Misyon / Vizyon </a>
+                    </li>
+                    <h3 class="menu-title">ÇALIŞMA ALANLARI</h3>
+                    <li>
+                        <a href="kumesler.html"> <i class="menu-icon fa fa-github-alt"></i>Kümesler </a>
+                    </li>
+                    <li>
+                        <a href="meyvebahcesi.html"> <i class="menu-icon fa fa-pagelines"></i>Meyve Bahçeleri </a>
+                    </li>
+                    <li>
+                        <a href="sebzetarlasi.html"> <i class="menu-icon fa fa-th-list"></i>Sebze Tarlaları </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </aside>
+
+
+    <div id="right-panel" class="right-panel">
+        <!-- -----HEADER----- -->
+        <header id="header" class="header">
+            <div class="header-menu">
+                <div class="col-sm-7">
+                    <a id="menuToggle" class="menutoggle pull-left"><i class="fa fa fa-tasks"></i></a>
                 </div>
-                <div class="login-form">
-                    <form>
-                        <div class="form-group">
-                            <label>E-mail Adresi</label>
-                            <input type="email" class="form-control" placeholder="Email">
+                <div class="col-sm-5">
+                    <div class="user-area dropdown float-right">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img class="user-avatar rounded-circle" src="icon-admin.png" alt="Admin">
+                        </a>
+                        <div class="user-menu dropdown-menu">
+                            <a class="nav-link" href="#"><i class="fa fa -cog"></i>Ayarlar</a>
+                            <a class="nav-link" href="index.html"><i class="fa fa-power -off"></i>Çıkış</a>
                         </div>
-                        <div class="form-group">
-                            <label>Şifre</label>
-                            <input type="password" class="form-control" placeholder="Şifre">
+                    </div>
+                    <div class="language-select dropdown" id="language-select">
+                        <a class="dropdown-toggle" href="#" data-toggle="dropdown" id="language" aria-haspopup="true" aria-expanded="true">
+                            <i class="flag-icon flag-icon-us"></i>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="language">
+                            <div class="dropdown-item">
+                                <span class="flag-icon flag-icon-fr"></span>
+                            </div>
+                            <div class="dropdown-item">
+                                <i class="flag-icon flag-icon-es"></i>
+                            </div>
+                            <div class="dropdown-item">
+                                <i class="flag-icon flag-icon-us"></i>
+                            </div>
+                            <div class="dropdown-item">
+                                <i class="flag-icon flag-icon-it"></i>
+                            </div>
                         </div>
-                        <div class="checkbox">
-                            <label>
-                                <input type="checkbox"> Beni Hatırla
-                            </label>
-                            <label class="pull-right">
-                                <a href="#">Şifremi Unuttum?</a>
-                            </label>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- -----İÇERİK----- -->
+        <div class="breadcrumbs">
+            <div class="col-sm-4">
+                <div class="page-header float-left">
+                    <div class="page-title">
+                        <h1>Ürünler</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-8">
+                <div class="page-header float-right">
+                    <div class="page-title">
+                        <ol class="breadcrumb text-right">
+                            <li><a href="sebzeler.html">Sebzeler</a></li>
+                            <li class="active">Biber</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content mt-3">
+            <div class="animated fadeIn">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="card">
+                            <div class="card-header">
+                                <strong class="card-title">Biber</strong>
+                            </div>
+                            <div class="card-body">
+                                <form action="" method="post" enctype="multipart/form-data" class="form-horizontal">
+                                    <div class="row form-group">
+                                        <div class="col col-md-3"><label for="text-input" class=" form-control-label">Ürün Adı</label></div>
+                                        <div class="col-12 col-md-9"><input type="text" id="text-input" name="text-input" value="Çarliston Biber (kg)" class="form-control"><small class="form-text text-muted">Lütfen İsim Giriniz</small></div>
+                                    </div>
+                                    <div class="row form-group">
+                                        <div class="col col-md-3"><label for="text-input" class=" form-control-label">Fiyat(₺)</label></div>
+                                        <div class="col-12 col-md-9"><input type="text" id="text-input" name="text-input" value="50" class="form-control"><small class="form-text text-muted"></small></div>
+                                    </div>
+                                    <div class="row form-group">
+                                        <div class="col col-md-3"><label for="text-input" class=" form-control-label">İndirimli Fiyat(₺)</label></div>
+                                        <div class="col-12 col-md-9"><input type="text" id="text-input" name="text-input" value="40" class="form-control"><small class="form-text text-muted"></small></div>
+                                    </div>
+                                    <div class="row form-group">
+                                        <div class="col col-md-3"><label for="text-input" class=" form-control-label">Alt Başlık</label></div>
+                                        <div class="col-12 col-md-9"><input type="text" id="text-input" name="text-input" value="Çarliston Biber" class="form-control"><small class="form-text text-muted"></small></div>
+                                    </div>
+                                    <div class="row form-group">
+                                        <div class="col col-md-3"><label for="textarea-input" class=" form-control-label">Açıklama</label></div>
+                                        <div class="col-12 col-md-9">
+                                            <textarea name="textarea-input" id="textarea-input" rows="9" class="form-control">
+                            • 100-150 gr ağırlığındadır.
+                            • Etli yapısı ile sivri bibere oranla biraz daha kalındır.
+                            • A ve C vitamini, sodyum, potasyum, demir, kalsiyum, magnezyum açısından zengindir.
+                            • Biber antioksidan özelliği sayesinde de vücudun bağışıklık sisteminin
+                            güçlenmesine yardımcı olur.
+                            • Bol miktarda C vitamini, beta karoten, A, P, K, B1, B2 ve E vitamini mevcuttur.</textarea>
+                                        </div>
+                                    </div>
+                                    <div class="row form-group">
+                                        <div class="col col-md-3"><label for="textarea-input" class=" form-control-label">Tanım</label></div>
+                                        <div class="col-12 col-md-9">
+                                            <textarea name="textarea-input" id="textarea-input" value="Çarliston Biber" rows="9" class="form-control">  Sofralık, açık tarla yetiştiriciliği ve örtü altı yetiştiriciliğine uygun erkenci bir çeşittir. Bitki yapısı güçlüdür, bol yapraklı ve çok dallıdır. Meyveler açık yeşil renkli uzun sivri konik yapıda ve sap kısmında körük oluşturmuştur.
+
+  Tatlı olan çarliston biberler, kızartılarak, salataya, yemeklere eklenerek ya da tek başına tüketilebilir. Yemekleri lezzetlendirmek için kullanılır. </textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="row form-group">
+                                        <div class="col col-md-3"><label for="file-multiple-input" class=" form-control-label">Resimleri Ekle</label></div>
+                                        <div class="col-12 col-md-9"><input type="file" id="file-multiple-input" name="file-multiple-input" multiple="" class="form-control-file"></div>
+                                    </div>
+                                </form>
+
+                            </div>
+                            <div class="card-footer">
+                                <button type="submit" class="btn btn-primary btn-sm">
+                                    <i class="fa fa-dot-circle-o"></i> Kaydet
+                                </button>
+                            </div>
                         </div>
-                        <a class="btn btn-success btn-flat m-b-30 m-t-30" href="grafik.html">Giriş</a>
-                        <!--  <div class="social-login-content">
-         <div class="social-button">
-             <button type="button" class="btn social facebook btn-flat btn-addon mb-3"><i class="ti-facebook"></i>Sign in with facebook</button>
-             <button type="button" class="btn social twitter btn-flat btn-addon mt-2"><i class="ti-twitter"></i>Sign in with twitter</button>
-         </div>
-     </div>
-     <div class="register-link m-t-15 text-center">
-         <p>Don't have account ? <a href="#"> Sign Up Here</a></p>
-     </div>-->
-                    </form>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
     <script src="/admin/js/vendor/jquery-2.1.4.min.js"></script>
     <script src="/admin/js/popper.min.js"></script>
     <script src="/admin/js/plugins.js"></script>
     <script src="/admin/js/main.js"></script>
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
 
-        gtag('config', 'UA-23581568-13');
-    </script>
-    <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317" integrity="sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA==" data-cf-beacon='{"rayId":"82fc20e92ae35488","version":"2023.10.0","token":"cd0b4b3a733644fc843ef0b185f98241"}' crossorigin="anonymous"></script>
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317" integrity="sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA==" data-cf-beacon='{"rayId":"82fc22d60b8a548d","version":"2023.10.0","token":"cd0b4b3a733644fc843ef0b185f98241"}' crossorigin="anonymous"></script>
 </body>
 </html>
